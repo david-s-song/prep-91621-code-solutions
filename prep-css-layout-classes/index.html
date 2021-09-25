@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+<h1>Indiana Jones</h1>
+<body>
+<!-- Complete the HTML here -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="raiders">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>The Nazi's should've resisted looking into the Ark of the Covenant. They opened something they couldn't handle.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/temple.jpg" alt="temple">
+        <h3>Temple of Doom</h3>
+          <p>How was the crystal head of an alien forefather taken from its resting place? Only Indiana Jones can solve that mystery. </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img src="images/crusade.jpg" alt="crusade">
+          <h3>The Last Crusade</h3>
+          <p>Both Indiana and his father were seduced by the same Nazi woman. Pursuit of immortality has its obstacles. </p>
+        </div>
+      </div>
+      </div>
+
+
+</body>
+</html>
