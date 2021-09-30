@@ -5,7 +5,7 @@ var person = {
 };
 console.log(person);
 
-var fullName = 'Caden ' + 'Song';
+var fullName = person.firstName + ' ' + person.lastName;
 fullName = "The person's name is: " + fullName;
 console.log(fullName);
 
